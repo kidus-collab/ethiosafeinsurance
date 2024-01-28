@@ -23,8 +23,8 @@
 }
 
 .logo {
-  margin-left: 5px;
-  margin-top: 5px;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
 .Nav-a {
@@ -43,7 +43,8 @@
   font-family: 400;
   color: black;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 18px;
+  margin-right: 20px;
 }
 
 .Nav-a p:hover {
@@ -53,8 +54,8 @@
 .btn {
   align-items: center;
   justify-content: center;
-  margin-right: 5px;
-  margin-top: 5px;
+  margin-right: 20px;
+  margin-top: 10px;
 }
 .btn button {
   border-color: transparent;
@@ -85,14 +86,14 @@
   width: 40%;
   margin-left: 10px;
   gap: 1px;
-  margin-top: 20px;
+  margin-top: 5rem;
 }
 .headline button {
   font-family: var(--font);
   color: white;
   border: transparent;
   border-radius: 100px;
-  margin-right: 10px;
+  margin-right: 3px;
   padding: 0px 16px;
   font-family: var(--font);
   font-weight: 900;
@@ -101,7 +102,8 @@
 }
 .headline p {
   font-family: var(--font);
-  font-weight: 900;
+  opacity: 100%;
+  font-weight: bolder;
   font-size: 14px;
 }
 .Landing-text h1 {
@@ -125,16 +127,61 @@
 }
 
 .email-box {
-  border: 2px;
-  border-color: var(--primaryColor);
+  margin-left: 10px;
+  margin-top: 60px;
+}
+.form {
+  display: flex;
+  border: 2px solid var(--primaryColor);
+  border-radius: 20px;
+  width: 75%;
+  justify-content: space-between;
+}
+.form button {
+  border-color: transparent;
+  background: var(--primaryColor);
+  border-radius: 15px;
+  color: white;
+  font-weight: 800;
+  font-family: var(--font);
+  padding: 18px;
+}
+.email-box input {
+  color: var(--primaryColor);
+  margin-left: 10px;
+  border: transparent;
+  padding: 10px;
   background-color: transparent;
 }
 
 .bgimg {
   background-image: url("Assets/Landing\ img.png");
+  margin-top: 100%;
 }
 
 /* Features */
+.check-svg {
+  color: var(--primaryColor);
+  width: 70px;
+  height: 70px;
+  align-self: center;
+  margin: 5px 40%;
+}
+.service-svg {
+  color: var(--primaryColor);
+  width: 70px;
+  height: 70px;
+  align-self: center;
+  margin: 5px 40%;
+}
+.box-svg {
+  color: var(--primaryColor);
+  width: 70px;
+  height: 70px;
+  align-self: center;
+  margin: 5px 40%;
+}
+
 .Features {
   margin-top: 30px;
   align-items: center;
@@ -215,6 +262,11 @@
   font-family: var(--font);
   font-weight: bold;
 }
+.mid-section-text ul li img {
+  margin-right: 15px;
+  width: 15px;
+  height: 15px;
+}
 
 .mid-section-text button {
   border-color: transparent;
@@ -229,17 +281,20 @@
 }
 .square-img {
   width: 50%;
+  margin-left: 40px;
 }
 
 /* services */
 .services {
   margin-top: 5rem;
   display: flex;
+  justify-content: space-between;
   flex-direction: row-reverse;
 }
 
 .service-img {
   width: 50%;
+  margin-top: 100px;
 }
 
 .service-list {
@@ -334,6 +389,7 @@
 
 .Footer-menu {
   padding: 40px;
+  z-index: 10;
   margin: 5rem 6rem 0px;
   border-radius: 10px;
   align-self: center;
@@ -367,17 +423,100 @@
   padding: 12px;
 }
 
+/* Footer */
+.footer {
+  height: 300px;
+  position: relative;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--footerColor);
+}
+.Footer-logo p {
+  color: white;
+  font-family: var(--font);
+  text-align: left;
+  font-size: 15px;
+  margin-top: -10px;
+  font-weight: 200;
+}
+
+.footer-sub {
+  padding: 2rem;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.Footer-link h3 {
+  color: white;
+  font-family: var(--font);
+  text-align: center;
+}
+.Footer-link ul li {
+  color: white;
+  font-family: var(--font);
+  text-align: left;
+  list-style: none;
+  font-size: 15px;
+  font-weight: 200;
+}
+.Footer-Email h3 {
+  color: white;
+}
+.Footer-Email p {
+  color: white;
+  font-size: 14px;
+  font-weight: lighter;
+  font-family: var(--font);
+}
+.location {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 5px;
+  font-family: var(--font);
+}
+
 /* Media query for responsivness */
 /* md */
 @media screen and (max-width: 768px) {
   /* nav bar  */
+  .link a {
+    margin-right: 0px;
+    font-size: 12px;
+  }
 
   /* landing page */
+  .home {
+    height: 500px;
+  }
+  .headline {
+    background-color: white;
+    border-radius: 20px;
+    padding: 3px;
+    display: flex;
+    width: 40%;
+    margin-left: 10%;
+    gap: 1px;
+    margin-top: 20px;
+  }
   .Landing-text h1 {
     font-size: 50px;
+    margin-left: 10%;
   }
   .Landing-text p {
     width: 60%;
+    margin-left: 10%;
+  }
+  .email-box {
+    margin-left: 10%;
+  }
+  .bg-img {
+    display: none;
   }
 
   /* Features */
@@ -405,6 +544,7 @@
   }
   .service-img {
     width: 100%;
+    margin-left: 17%;
   }
   .service-list {
     width: 100%;
@@ -423,6 +563,11 @@
     font-size: 12px;
     text-align: left;
   }
+
+  /* Footer*/
+  .Footer-Email {
+    margin-left: -20px;
+  }
 }
 
 /* sm */
@@ -436,6 +581,10 @@
     font-size: 25px;
   }
   /* Features  */
+  .Feat-container {
+    display: block;
+    margin-top: 10px;
+  }
   .mid-section-text h2 {
     font-size: 17px;
     text-align: center;
