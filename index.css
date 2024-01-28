@@ -1,0 +1,93 @@
+--root {
+  --primaryColor: rgba(253, 131, 64, 1);
+  --landingBg: rgba(232, 235, 255, 1);
+  --footerColor: rgba(59, 83, 74, 1);
+  --font: "Poppins", sans-serif;
+}
+
+/* NavBar */
+
+.nav-bar {
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--landingBg);
+}
+
+/* .logo {
+
+}
+*/
+
+.Nav-link {
+  display: " flex";
+  gap: "2px";
+}
+
+.Nav-a {
+  display: " flex";
+  gap: "2px";
+}
+
+.Nav-a p {
+  font: var(--font);
+  text-decoration: none;
+  font-family: 400;
+  font-size: 12px;
+}
+
+.Nav-a p:hover {
+  font-weight: 900;
+}
+
+/* landing page */
+#home {
+  display: flex;
+  background-color: var(--landingBg);
+  justify-content: space-between;
+}
+
+.Landing-text {
+  align-items: left;
+  justify-content: left;
+}
+
+.headline {
+  background-color: white;
+  border-radius: 20px;
+  padding: 3px;
+  display: flex;
+  gap: 1px;
+  margin-bottom: 5px;
+}
+.headline button {
+  font-family: var(--font);
+  color: white;
+  background-color: var(--primaryColor);
+}
+.headline p {
+  font-family: var(--font);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.Landing-text h1 {
+  font-weight: 900;
+  font-family: var(--font);
+  font-size: 60px;
+}
+
+/* 
+.Landing-text p {
+}
+
+.email-box {
+}
+
+*/
+
+.bgimg {
+  background-image: url("Assets/Landing\ img.png");
+}
