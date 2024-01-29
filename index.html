@@ -49,8 +49,14 @@
             <p>Get Service</p>
             <div  class="form">
               <input alt="input of email" type="text" placeholder="Enter your Email address"/>
-              <button>Send email</button>
+              <button onclick="openPopup()">Send email</button>
             </div >
+          </div>
+          <div class="Popup" id="popup">
+            <img src="Assets/check-circle.png" alt="Thick mark" />
+            <h2>Email Sent !!!</h2>
+            <h4>Your details has been successfully submitted. Thanks!</h4>
+            <button onclick="closePopup()">Close</button>
           </div>
         </div>
         <div class="bg-img">
@@ -70,17 +76,17 @@
       </p>
       <div class="Feat-container" alt="Features description">
         <div alt="Feature list" class="Feat-service"> 
-          <img src="Assets/svg/check-solid.svg" class="check-svg" alt="">
+          <img src="Assets/check.png" class="check-svg" alt="">
              <h2>Certified Company</h2>
              <p>We have experience in helping Companies & Clients</p>
         </div>
         <div  alt="Feature list"  class="Feat-service">
-          <img src="Assets/svg/server-solid.svg" class="service-svg" alt="">
+          <img src="Assets/server.png" class="service-svg" alt="">
           <h2>24/7 Service</h2>
              <p>We have experience in helping Companies & Clients</p>
         </div>
         <div  alt="Feature list"  class="Feat-service">
-          <img src="Assets/svg/box-archive-solid.svg" class="box-svg" alt="">
+          <img src="Assets/box.png" class="box-svg" alt="">
           <h2>Plan Your Future</h2>
              <p>We have experience in helping Companies & Clients</p>
         </div>
@@ -101,7 +107,7 @@
           <li><img src="Assets/svg/bookmark-solid.svg" alt="bookmark svg"/>Understanding Car Insurance</li>
           <li><img src="Assets/svg/bookmark-solid.svg" alt="bookmark svg"/>Research Overview</li>
         </ul>
-        <button alt="Button when click give quote" onclick = (getquote(quote_api))>Get a Quote</button>
+        <button alt="Button when click give quote" onclick = "getquote(quote_api)" >Get a Quote</button>
         <div class="quote-box" id="quote-box">
           <blockquote id="quote"></blockquote>
           <span id="author"></span>

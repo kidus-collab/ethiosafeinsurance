@@ -1,11 +1,23 @@
 // dom
 //hamburger menu
-//popup menu
 
+//Popup Dom
+let popup = document.getElementById("popup");
+
+// Quote dom
 const quote_api = "https://api.quotable.io/random";
 const quote = document.getElementById("quote");
 const author = document.getElementById("author");
 const quoteBox = document.getElementById("quote-box");
+
+//popup menu
+function openPopup() {
+  popup.classList.add("open-popup");
+}
+
+function closePopup() {
+  popup.classList.remove("open-popup");
+}
 
 // quote fetching API
 async function getquote(quote_api) {
