@@ -1,6 +1,7 @@
 // dom
 //hamburger menu
 
+var navBar = document.getElementById("Navbar");
 //Popup Dom
 let popup = document.getElementById("popup");
 
@@ -9,6 +10,15 @@ const quote_api = "https://api.quotable.io/random";
 const quote = document.getElementById("quote");
 const author = document.getElementById("author");
 const quoteBox = document.getElementById("quote-box");
+
+// Box shadow on nav bar when scrolled
+window.onscroll = function () {
+  if (window.scrollY > 22) {
+    navBar.classList.add("scrolled");
+  } else {
+    navBar.classList.add("removed");
+  }
+};
 
 //popup menu
 function openPopup() {
