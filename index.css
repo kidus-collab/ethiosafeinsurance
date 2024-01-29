@@ -65,6 +65,11 @@
   font-family: var(--font);
   padding: 12px;
 }
+.btn button a {
+  text-decoration: none;
+  color: white;
+}
+
 .btn button:hover {
   background-color: green;
 }
@@ -449,6 +454,11 @@
   font-family: var(--font);
   padding: 12px;
 }
+.Footer-menu button a {
+  text-decoration: none;
+  color: white;
+}
+
 .Footer-menu button:hover {
   background-color: green;
 }
