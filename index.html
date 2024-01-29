@@ -101,7 +101,11 @@
           <li><img src="Assets/svg/bookmark-solid.svg" alt="bookmark svg"/>Understanding Car Insurance</li>
           <li><img src="Assets/svg/bookmark-solid.svg" alt="bookmark svg"/>Research Overview</li>
         </ul>
-        <button alt="Button when click give quote" id="quote">Get a Quote</button>
+        <button alt="Button when click give quote" onclick = (getquote(quote_api))>Get a Quote</button>
+        <div class="quote-box">
+          <blockquote id="quote"></blockquote>
+          <span id="author"></span>
+        </div>
       </div>
   </div>
 

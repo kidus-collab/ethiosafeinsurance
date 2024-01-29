@@ -287,6 +287,25 @@
 .mid-section-text button:hover {
   background-color: green;
 }
+#quote-box {
+  margin-top: 30px;
+  width: fit-content;
+  display: none;
+  padding: 20px 10px;
+  border-radius: 20px;
+  background-color: rgba(172, 171, 171, 0.267);
+}
+.quote-box blockquote {
+  font-family: var(--font);
+  color: var(--primaryColor);
+  font-weight: bolder;
+}
+.quote-box span {
+  margin-left: 70%;
+  font-family: var(--font);
+  font-weight: 200;
+}
+
 .square-img {
   width: 50%;
   margin-left: 40px;
